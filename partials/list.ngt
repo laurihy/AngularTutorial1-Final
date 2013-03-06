@@ -1,0 +1,23 @@
+<!-- .ngt stands for angular template, .html-files and {{}}'s would get processed by backlift -->
+<div id="wrapper">
+	<form ng-submit="addNewItem()">
+	    <input type="text" ng-model="itemText" placeholder="Add new item" />
+	    <button type="submit">Add</button>
+	</form>
+	<style>
+	    .deleted-true {
+	        opacity: 0.2;
+	    }
+	</style>
+
+	<ul>
+	    <li ng-repeat="item in items | filter:{archived:false} | orderBy:'text':true" class="deleted-{{item.deleted}}">
+	        {{item.text}} 
+	        <div class="actions">
+	            <a href="" ng-click="deleteItem(item)">(del)</a>
+	    </li>
+	</ul>
+
+	<a href="" ng-click="archiveItems()">Archive deleted</a>
+
+</div>
