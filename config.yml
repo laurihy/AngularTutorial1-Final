@@ -26,10 +26,9 @@
 # will match any folder.
 
 scripts:
-- /lib/angular/angular.min.js
-- /lib/angular/angular-resource.min.js
+- /lib/angular/angular.js
+- /lib/angular/angular-resource.js
 - /**/*.js
-- /scripts/controllers.js
 
 
 # styles: These stylesheets will be packaged and linked in order, 
