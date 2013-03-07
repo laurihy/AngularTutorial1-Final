@@ -1,31 +1,36 @@
-html, body {
-	min-height: 100%;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
 body {
-	background: #eee;
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+	margin: 0;
 }
 
-#wrapper {
+.row {
+	width: 100%;
+}
+
+.row.header {
+	background: #fafafa;
+	border-bottom: 1px solid #eee;
+	padding: 30px 0;
+}
+
+.wrapper {
 	width: 96%;
 	margin: 0 auto;
 	max-width: 500px;
 	min-height: 100%;
-	background: #fff;
 	padding: 2%;
-	border: 1px solid #ddd;
-	font-size: 16px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	font-size: 14px;
 	border-radius: 5px;
 }
 
-h1 {
-	max-width: 100%;
-	overflow-x: auto;
-	font-size: 1.3em;
-	line-height: 1em;
-	padding: 30px 0;
+h1 input {
+	width: 95%;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.6em;
 }
 
 #header {
@@ -33,41 +38,46 @@ h1 {
 }
 
 #add {
-	margin: 20px 0;
+	margin-top: 40px;
+	font-size: 1.2em;
 }
 
-#settings {
-	margin-top: 20px;
+
+small {
+	font-size: 0.8em;
 }
 
-.deleted-true {
-	opacity: 0.2;
+.right {
+	float: right;
 }
 
-.starred-true {
-	border-color:#9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
-}
+/*
+
+Item list
+
+*/
 
 ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+
 }
 
 li {
-	border: 1px solid #ccc;
 	position: relative;
-	padding: 10px;
-	margin: 5px 0;
-	border-radius: 5px;
+	margin: 10px 0;
+	padding: 15px;
+	background: #f5f5f5;
+	border-left: 4px solid #ccc;
 }
 
 li .action {
 	position: absolute;
-	right: 3px;
-	top: 3px;
+	right: 6px;
+	top: 6px;
 	display: none;
+	-webkit-transition: all 0.1s linear;
 }
 
 li:hover .action {
@@ -76,14 +86,68 @@ li:hover .action {
 
 span.date {
 	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	font-size: 0.9em;
-	color: #888;
 	margin-top: 10px;
+	padding-left: 0;
+	font-size: 0.75em;
+	color: #888;
 }
 
-small {
-	font-size: 0.85em;
+.deleted-true {
+	opacity: 0.2;
 }
+
+.starred-true {
+	border-color:#9ecaed;
+}
+
+/*
+
+Form elements
+
+*/
+
+input, button {
+	font-size: 1em;
+}
+
+input {
+	border: 2px solid #eee;
+	border-radius: 2px;
+	padding: 6px;
+	width: 40%;
+}
+
+.btn {
+	border-radius: 2px;
+	border: 0;
+	background: #91A960;
+	padding: 8px 15px;
+	text-transform: uppercase;	
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	font-size: 0.9em;
+}
+
+.btn:active {
+	background: #7A9050;
+}
+
+.btn-delete {
+	background: #bbb;
+	-webkit-transition: all 0.1s linear;
+	top: 1px;
+}
+
+.btn-delete:hover {
+	background: #d24635;
+	-webkit-transition: all 0s linear;
+}
+
+.btn-delete:active {
+	background: #980400;
+}
+
+
+
+
