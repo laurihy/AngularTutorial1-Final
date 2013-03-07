@@ -1,5 +1,3 @@
-angular.module('ListController', ['ngResource']);
-
 function ListController($scope){
 
 	$scope.items = [
