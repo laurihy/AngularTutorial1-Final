@@ -3,7 +3,7 @@
 
     <form ng-submit="addNewItem()">
         <input type="text" ng-model="itemText" placeholder="Add item" />
-        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="submit" class="btn">Add</button>
     </form>
 
     <style>
