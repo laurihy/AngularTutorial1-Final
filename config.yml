@@ -26,6 +26,7 @@
 # will match any folder.
 
 scripts:
+- /scripts/backlift-reloader.js
 - /lib/angular/angular.js
 - /lib/angular/angular-resource.js
 - /**/*.js
